@@ -1,7 +1,7 @@
 <template>
   <div class="hello">
     <p>{{ message }}</p>
-    <button v-on:click="reverseMessage">Reverse Message</button>
+    <input v-model="message">
   </div>
 </template>
 
@@ -12,13 +12,8 @@ export default {
     return {
       message: 'Hello Vue.js!'
     }
-  },  
-  methods: {
-    reverseMessage: function () {
-      this.message = this.message.split('').reverse().join('')
-    }
   }
-}
+}  
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
