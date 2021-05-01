@@ -105,3 +105,21 @@ methods: {
 ***
 <br/>
 
+### ユーザー入力の制御(v-model)
+```html
+<div class="hello">
+    <p>{{ message }}</p>
+    <input v-model="message">
+  </div>
+```
+```js
+data () {
+    return {
+      message: 'Hello Vue.js!'
+    }
+  }
+```
+***
+<br/>
+
+### 
