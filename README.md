@@ -77,7 +77,31 @@ data () {
       {text:'Build something awesome'}
     ]
   }
+
 }
 ```
 ***
 <br/>
+
+### ユーザー入力の制御(v-on)
+```html
+<div class="hello">
+  <p>{{ message }}</p>
+  <button v-on:click="reverseMessage">Reverse Message</button>
+</div>
+```
+```js
+data () {
+  return {
+    message: 'Hello Vue.js!'
+  }
+},  
+methods: {
+  reverseMessage: function () {
+    this.message = this.message.split('').reverse().join('')
+  }
+}
+```
+***
+<br/>
+
