@@ -1,8 +1,10 @@
 <template>
   <div class="hello">
-    <span v-if="seen">
-      Now you see me
-    </span>  
+    <ol>
+      <li v-for="todo in todos">
+        {{ todo.text }}
+      </li>  
+    </ol>  
   </div>
 </template>
 
@@ -11,7 +13,11 @@ export default {
   name: 'HelloWorld',
   data () {
     return {
-      seen:true
+      todos: [
+        {text:'Learn JavaScript'},
+        {text:'Learn Vue'},
+        {text:'Build something awesome'}
+      ]
     }
   }
 }

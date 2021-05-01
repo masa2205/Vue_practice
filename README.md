@@ -30,11 +30,11 @@ var app = new Vue({
 
 ```js
  data () {
-    return {
-      message: 'You loaded thid page on' + 
-               new Date().toLocaleString()
-    }
+  return {
+    message: 'You loaded thid page on' + 
+             new Date().toLocaleString()
   }
+}
 ```
 ***
 <br/>
@@ -49,11 +49,35 @@ var app = new Vue({
 ```
 ```js
 data () {
-    return {
-      seen:true
-    }
+  return {
+    seen:true
   }
+}
 ```
 ***
 
+<br/>
+
+### ループ
+```html
+<div class="hello">
+  <ol>
+    <li v-for="todo in todos">
+      {{ todo.text }}
+    </li>  
+  </ol>  
+</div>
+```
+```js
+data () {
+  return {
+    todos: [
+      {text:'Learn JavaScript'},
+      {text:'Learn Vue'},
+      {text:'Build something awesome'}
+    ]
+  }
+}
+```
+***
 <br/>
