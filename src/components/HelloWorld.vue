@@ -1,7 +1,7 @@
 <template>
   <div class="hello">
-    <span v-bind:title="message">
-      Hover your mouse over me for a few second to see my dynamically bound title!
+    <span v-if="seen">
+      Now you see me
     </span>  
   </div>
 </template>
@@ -11,7 +11,7 @@ export default {
   name: 'HelloWorld',
   data () {
     return {
-      message: 'You loaded thid page on' + new Date().toLocaleString()
+      seen:true
     }
   }
 }
