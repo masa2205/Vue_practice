@@ -1,3 +1,6 @@
+<<<<<<< HEAD
+node_modules
+=======
 .DS_Store
 node_modules/
 /dist/
@@ -15,3 +18,4 @@ selenium-debug.log
 *.ntvs*
 *.njsproj
 *.sln
+>>>>>>> ea27634451cf378605bbc48ee9c47e113bc8ba11
