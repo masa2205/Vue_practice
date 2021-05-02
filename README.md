@@ -185,3 +185,8 @@ Mustache構文を利用したテキスト展開
 
 <br />
 
+生のHTML
+```html
+<p>Using mustaches: {{ rawHtml }}</p>
+<p>Using v-html directive: <span v-html="rawHtml"></span></p>
+```

@@ -1,6 +1,7 @@
 <template>
   <div class="hello">
-    <span v-once>This will never change: {{ msg }}</span>
+    <p>Using mustaches: {{ rawHtml }}</p>
+    <p>Using v-html directive: <span v-html="rawHtml"></span></p>
   </div>
 </template>
 
@@ -9,7 +10,7 @@ export default {
   name: 'HelloWorld',
   data () {
     return {
-      msg: 'Hello Vue!'
+      rawHtml: 'Hello Vue!'
     }
   }
 }  
