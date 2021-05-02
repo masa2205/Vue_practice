@@ -157,3 +157,31 @@ Vue.component('todo-item', {
   template: '<li>{{ todo.text }}</li>'
 })
 ```
+***
+<br/>
+
+# Vueインスタンスの作成
+```js
+var vm = new Vue({
+  // オプション
+})
+```
+***
+<br/>
+
+# テンプレート構文
+
+<br />
+
+## 展開
+
+***
+
+### テキスト
+Mustache構文を利用したテキスト展開
+```html
+<span>Message: {{ msg }}</span>
+```
+
+<br />
+
