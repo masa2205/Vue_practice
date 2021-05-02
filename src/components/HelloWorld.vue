@@ -1,7 +1,12 @@
 <template>
   <div class="hello">
-    <p>{{ message }}</p>
-    <input v-model="message">
+    <ol>
+      <todo-item
+        v-for="item in grocerylist"
+        v-bind:todo="item"
+        v-bind:key="item.id"
+      ></todo-item>  
+    </ol>  
   </div>
 </template>
 
@@ -10,7 +15,11 @@ export default {
   name: 'HelloWorld',
   data () {
     return {
-      message: 'Hello Vue.js!'
+      groceryList: [
+        { id: 0, text: 'Vegetables' },
+        { id: 1, text: 'Cheese' },
+        { id: 2, text: 'Whatever else humans are supposed to eat' }
+      ]
     }
   }
 }  
